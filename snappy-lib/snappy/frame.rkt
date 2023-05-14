@@ -15,7 +15,7 @@
 
 (define (read-frame! in out)
   (unless (equal? (peek-bytes stream-ident-len 0 in) stream-ident)
-    (error 'snappy-decompress-through-ports "invalid stream identifier"))
+    (error 'read-frame! "invalid stream identifier"))
   (define buf (make-buffer (* 4 1024)))
   (define tmp (make-bytes (* 65 1024)))
   (let chunk-loop ()
