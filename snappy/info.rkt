@@ -7,4 +7,4 @@
                "snappy-lib"))
 (define build-deps '("racket-doc"
                      "scribble-lib"))
-(define scribblings '(("snappy-manual.scrbl")))
+(define scribblings '(("snappy-manual.scrbl" () ("Compression and Decompression"))))
